@@ -1,0 +1,7 @@
+plugins:
+  - name: ai-assistant
+    source: https://artifacthub.io/packages/headlamp/headlamp-plugins/headlamp_ai_assistant
+    version: 0.1.0-alpha  # You can update this to the latest version available on Artifact Hub
+    installOptions:
+      parallel: true
+      maxConcurrent: 2

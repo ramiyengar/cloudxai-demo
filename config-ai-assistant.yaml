@@ -1,0 +1,17 @@
+# values.yaml
+
+# 1. Enable Headlamp to watch for and load the plugins
+config:
+  watchPlugins: true
+
+# 2. Enable the in-cluster Plugin Manager and define the plugins
+pluginsManager:
+  enabled: true
+  configContent: |
+    plugins:
+      - name: ai-assistant
+        source: https://artifacthub.io/packages/headlamp/headlamp-plugins/headlamp_ai_assistant
+        version: 0.1.0-alpha
+        installOptions:
+          parallel: true
+          maxConcurrent: 2
